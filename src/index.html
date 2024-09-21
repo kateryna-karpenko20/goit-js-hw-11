@@ -14,6 +14,17 @@
       <!-- Loads the specified .html file -->
       <load src="./partials/vite-promo.html" />
       <load src="./partials/badges.html" />
+            
+      <form id="search-form">
+      <input class="input-found" type="text" name="searchQuery" placeholder="Search images..." />
+      <button class="button-found" type="submit">Search</button>
+       </form>
+            
+      <ul class="gallery"></ul>
+            
+      <div id="loading-indicator" class="hidden">
+      <div class="loader"></div>
+      </div>
     </main>
 
     <load src="./partials/footer.html" />
