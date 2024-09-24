@@ -43,7 +43,8 @@ function onSearch(event) {
   }
 
   clearGallery(gallery);
-  showLoader(loadingIndicator);
+showLoader(loadingIndicator);
+setTimeout(() => hideLoader(loadingIndicator), 3000);
   
   fetchImages(query)
     .then(images => {

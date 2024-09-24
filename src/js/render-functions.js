@@ -44,8 +44,10 @@ export function clearGallery(gallery) {
 
 export function showLoader(loadingIndicator) {
   loadingIndicator.classList.remove('hidden');
+  loadingIndicator.style.display = 'block'; 
 }
 
 export function hideLoader(loadingIndicator) {
   loadingIndicator.classList.add('hidden');
+  loadingIndicator.style.display = 'none'; 
 }
